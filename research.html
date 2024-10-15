@@ -15,11 +15,25 @@
     <link href="css/portfolio-item.css" rel="stylesheet">
     
     <style>
-      .custom-small-text {
-        color: #ff5733; /* Custom color */
+      /* Custom styles */
+      .rounded-container {
+        background-color: #f8f9fa; /* Light background */
+        padding: 20px;
+        border-radius: 15px; /* Rounded corners */
+        margin-bottom: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
       }
-      .text-highlight {
-        color: #1a73e8; /* Custom highlight color */
+      .image-container {
+        border-radius: 15px; /* Rounded image container */
+        overflow: hidden;
+        max-width: 100%; /* Dynamic width */
+        margin: 0 auto; /* Centering the container */
+      }
+      .img-fluid {
+        border-radius: 15px; /* Rounded corners for the image */
+      }
+      .text-blue {
+        color: #007bff;
       }
     </style>
     
@@ -101,23 +115,35 @@
       <hr class="border-bottom">
 
       <!-- Research Topics -->
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="text-blue">1. Data-driven Design of Battery Cells</h3>
-          <p>The future is electric, and the battery industry plays a crucial role in modern society. The demand for batteries continues to rise as the push towards electrification increases. Our research focuses on optimizing battery chemistries to meet future energy demands while reducing dependency on critical minerals like lithium.</p>
-          
-          <h4>Key Areas of Focus</h4>
-          <ul>
-            <li><strong>Multimodal Data Fusion:</strong> Combining multiple sources of data (EIS, CP, XRD, SEM) to predict battery cell performance using machine learning models.</li>
-            <li><strong>Uncertainty Quantification:</strong> Developing probabilistic models that provide not only predictions but also confidence intervals for battery design decisions.</li>
-            <li><strong>Transfer Learning for New Chemistries:</strong> Investigating how models trained on one type of battery chemistry can be adapted to predict performance for emerging chemistries.</li>
-          </ul>
-        </div>
+
+      <!-- Main Container -->
+      <div class="container mt-5">
         
-        <!-- Image for Battery Demand -->
-        <div class="col-md-12 text-center my-3">
-          <img src="images/global_battery_demand.png" alt="Global Battery Demand" class="img-fluid" style="max-width: 80%;">
-          <small>Li-ion battery demand is expected to grow by about 27% annually to reach around 4700 GWh by 2030. (Image courtesy of McKinsey and Company)</small>
+        <!-- Research Topics 1 -->
+        <div class="rounded-container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-blue">1. Data-driven Design of Battery Cells</h3>
+              <p>The future is electric, and the battery industry plays a crucial role in modern society. The demand for batteries continues to rise as the push towards electrification increases. Our research focuses on optimizing battery chemistries to meet future energy demands while reducing dependency on critical minerals like lithium.</p>
+              
+              <h4>Key Areas of Focus</h4>
+              <ul>
+                <li><strong>Multimodal Data Fusion:</strong> Combining multiple sources of data (EIS, CP, XRD, SEM) to predict battery cell performance using machine learning models.</li>
+                <li><strong>Uncertainty Quantification:</strong> Developing probabilistic models that provide not only predictions but also confidence intervals for battery design decisions.</li>
+                <li><strong>Transfer Learning for New Chemistries:</strong> Investigating how models trained on one type of battery chemistry can be adapted to predict performance for emerging chemistries.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Image for Battery Demand in Separate Rounded Container -->
+          <div class="row">
+            <div class="col-md-12 text-center my-3">
+              <div class="image-container">
+                <img src="images/global_battery_demand.png" alt="Global Battery Demand" class="img-fluid" style="max-width: 80%;">
+              </div>
+              <small>Li-ion battery demand is expected to grow by about 27% annually to reach around 4700 GWh by 2030. (Image courtesy of McKinsey and Company)</small>
+            </div>
+          </div>
         </div>
         
         <div class="col-md-12">
