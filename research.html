@@ -75,14 +75,11 @@
       <div class="row">
         <div class="col-md-8">
           <p>
-            The efficiency and operational life of sophisticated electronics (e.g., batteries, electronic chips, active wearable or implanted electronics) that enable our digital world are often determined by the materials selected and optimized for those applications. These innovations shape the world we know and allow the future we envision. However, transitioning a new material from discovery to practical use can take up to 20 years, and shortening this time is crucial to our economic competitiveness and prosperity. 
-          </p>
-          <p>
-            My research addresses this grand challenge by leveraging <span class="text-highlight">high-throughput multi-physics and multi-scale methods</span> that generate vast amounts of data, which are analyzed using Artificial Intelligence (AI). These methods build scientific robots capable of solving specific materials design problems, advancing the GREEN and BLUE economy.
+            The efficiency and operational life of sophisticated electronics (e.g., batteries, electronic chips, active wearable or implanted electronics) that enable our digital world are often determined by the materials selected and optimized for those applications. We work to build fundamental tools for solid-state inorganic materials featuring unique chemical, electronic, and structural instabilities within the diverse domain of materials.
           </p>
           <h3>Current Focus</h3>
           <p>
-            My ongoing research centers on the accelerated design of materials, with a particular focus on high entropy alloys and thermoelectric materials. I aim to develop tools for solid-state inorganic materials that exhibit unique chemical, electronic, and structural instabilities, spanning domains such as:
+            Our ongoing research centers on the accelerated design of materials, with a particular focus on high entropy alloys and thermoelectric materials. We aim to develop tools for solid-state inorganic materials that exhibit unique chemical, electronic, and structural instabilities, spanning domains such as:
           </p>
           <ul>
             <li>Next-generation batteries (e.g., cobalt-free lithium and magnesium-based cells)</li>
@@ -103,30 +100,78 @@
 
       <hr class="border-bottom">
 
+      <!-- Research Topics -->
       <div class="row">
         <div class="col-md-12">
-          <h3>Research Phases</h3>
-          <p>
-            I have structured my research into three distinct phases: short-term, intermediate-term, and long-term. Each phase focuses on different aspects of materials design and discovery:
-          </p>
-          <ol>
-            <li><strong>Short-term:</strong> Developing high-throughput machine learning (ML)-based multiphysics computational tools for materials study.</li>
-            <li><strong>Intermediate-term:</strong> Establishing a research group to explore new directions in computational materials science using data science tools.</li>
-            <li><strong>Long-term:</strong> Becoming an independent researcher contributing significantly to the field, with a focus on mentoring the next generation of scientists and engineers.</li>
-          </ol>
+          <h3 class="text-blue">1. Data-driven Design of Battery Cells</h3>
+          <p>The future is electric, and the battery industry plays a crucial role in modern society. The demand for batteries continues to rise as the push towards electrification increases. Our research focuses on optimizing battery chemistries to meet future energy demands while reducing dependency on critical minerals like lithium.</p>
+          
+          <h4>Key Areas of Focus</h4>
+          <ul>
+            <li><strong>Multimodal Data Fusion:</strong> Combining multiple sources of data (EIS, CP, XRD, SEM) to predict battery cell performance using machine learning models.</li>
+            <li><strong>Uncertainty Quantification:</strong> Developing probabilistic models that provide not only predictions but also confidence intervals for battery design decisions.</li>
+            <li><strong>Transfer Learning for New Chemistries:</strong> Investigating how models trained on one type of battery chemistry can be adapted to predict performance for emerging chemistries.</li>
+          </ul>
         </div>
+        
+        <!-- Image for Battery Demand -->
+        <div class="col-md-12 text-center my-3">
+          <img src="figs/global_battery_demand.png" alt="Global Battery Demand" class="img-fluid" style="max-width: 100%;">
+          <small>Li-ion battery demand is expected to grow by about 27% annually to reach around 4700 GWh by 2030. (Image courtesy of McKinsey and Company)</small>
+        </div>
+        
+        <div class="col-md-12">
+          <h3 class="text-blue">2. Multi-Physics Modeling of Dendrite-Free Metal-Ion Batteries</h3>
+          <p>Developing magnesium and sodium metal anodes for future high-energy storage devices has emerged as a promising alternative to lithium-ion batteries. Our research investigates strategies to optimize these technologies for high-performance applications.</p>
+          <h4>Key Focus Areas:</h4>
+          <ul>
+            <li><strong>Thermodynamic Considerations:</strong> Achieving a balance between energy storage capacity and performance.</li>
+            <li><strong>Kinetic Requirements:</strong> Ensuring low site-to-site diffusion barriers and facilitating solvation at interfaces for optimal battery performance.</li>
+            <li><strong>Multi-Physics Models:</strong> Constructing fully coupled mesoscale models to understand the impact of charge, heat, and stress on deposit growth during electrodeposition.</li>
+          </ul>
+        </div>
+        
+        <div class="col-md-12">
+          <h3 class="text-blue">3. Machine-Learning Reinforced Computational Design of Solder Interconnections</h3>
+          <p>Our research focuses on developing machine learning-assisted models for designing solder interconnections in next-generation microchips, reducing energy costs and enhancing material performance.</p>
+          <h4>Key Research Areas:</h4>
+          <ul>
+            <li><strong>Electromigration (EM) and Thermomigration (TM):</strong> Addressing critical issues in 3D chip architectures related to electromigration and thermomigration.</li>
+            <li><strong>Low-Temperature Solder Solutions:</strong> Developing energy-efficient and carbon-reducing solder solutions, such as BiSn-based alloys.</li>
+            <li><strong>Microstructure-Sensitive Materials Design:</strong> Utilizing phase-field modeling for the analysis of solder interconnects, incorporating deep learning for high-throughput evaluation.</li>
+          </ul>
+        </div>
+        
+        <!-- Image for Solder Interconnections -->
+        <div class="col-md-12 text-center my-3">
+          <img src="figs/3DIC_architectures.jpg" alt="3DIC Architectures" class="img-fluid" style="max-width: 100%;">
+          <small>Packaging options for 3D chips. The vertical axis shows the potential for large-scale system integration, while the horizontal axis shows the complexity of connectivity and integration density.</small>
+        </div>
+        
+        <div class="col-md-12">
+          <h3 class="text-blue">4. Exploring Chemistry/Processing-Structure-Property Relations for High-Performance Thermoelectric Materials</h3>
+          <p>Our research aims to explore the relationships between chemistry, structure, and properties of thermoelectric materials for efficient power generation, using advanced machine learning and optimization techniques.</p>
+          <h4>Key Research Areas:</h4>
+          <ul>
+            <li><strong>High-Throughput Modeling:</strong> Developing microstructure-aware models to establish process-structure-property (PSP) relationships.</li>
+            <li><strong>Bayesian Optimization (BO):</strong> Leveraging BO to optimize material performance through iterative exploration of design space.</li>
+            <li><strong>Advanced Machine Learning:</strong> Applying deep learning architectures for the prediction of thermoelectric material performance, focusing on microstructure analysis.</li>
+          </ul>
+        </div>
+        
+        <!-- Image for Thermoelectric Materials -->
+        <div class="col-md-12 text-center my-3">
+          <img src="figs/TEG_all2.pdf" alt="Thermoelectric Materials" class="img-fluid" style="max-width: 100%;">
+          <small>Thermoelectric power generation for compact spacecraft systems. This includes predictions of nanostructures using phase-field methods.</small>
+        </div>
+        
       </div>
-
+      
+    </div><!-- /.container -->
+    
       <hr class="border-bottom">
 
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Funding Opportunities</h3>
-          <p>
-            In pursuit of funding, I will explore federal opportunities through organizations such as the National Science Foundation (NSF), the Department of Energy (DOE), and the Department of Defense (DoD). I will also pursue state-level opportunities through institutions such as [State's Grant Program] and internal university programs.
-          </p>
-        </div>
-      </div>
+
 
     </div><!-- /.container -->
 
